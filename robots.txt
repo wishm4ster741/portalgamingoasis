@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Lokasi Peta Situs (Sitemap)
-Sitemap: https://oasisgroup.netlify.app/sitemap.xml
+Sitemap: https://portalgamingoasis.netlify.app/sitemap.xml
