@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Pengaturan Karakter & Responsif (Wajib untuk Mobile & SEO) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Primary Tags: Judul dan Deskripsi Halaman -->
+    <title>OASISGROUP: Main Live Gaming &amp; Peluang Cuan Mudah (2026)</title>
+    <meta name="description" content="Pengalaman main live gaming dan strategi cuan santai di OasisTogel, Kaisar4DToto, Dynasty4DToto, dan Taruma4D bersama jaringan OASISGROUP.">
+    <link rel="canonical" href="https://portalgamingoasis.netlify.app/">
+    <meta name="google-site-verification" content="xSCB9DWFLMe2CHraZQ2aMMaqcVaSKtxF39-RO_7HsTw" />
+
+    <!-- Open Graph Tags (Agar tampil rapi saat dibagikan di WhatsApp, Facebook, dll) -->
+    <meta property="og:title" content="OASISGROUP: Main Live Gaming &amp; Peluang Cuan Mudah (2026)">
+    <meta property="og:description" content="Pengalaman main live gaming dan strategi cuan santai di OasisTogel, Kaisar4DToto, Dynasty4DToto, dan Taruma4D bersama jaringan OASISGROUP.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://portalgamingoasis.netlify.app/">
+    <meta property="og:image" content="https://portalgamingoasis.netlify.app/img/Banner_sq.jpg">
+
+    <!-- Hubungkan ke file CSS Anda -->
+    <link rel="stylesheet" href="styles/color_template.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <style>
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            margin-right: 10px;
+            border: 2px solid var(--Border);
+        }
+
+        .brand-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .hero-banner {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: var(--Button-background);
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .hero-banner img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Animasi untuk latar belakang modal (Fade In) */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Animasi untuk kotak popup (Zoom In & Fade In) */
+        @keyframes popupScale {
+            from {
+                opacity: 0;
+                transform: scale(0.7);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .modal.is-hidden {
+            display: none;
+        }
+
+        .popup {
+            width: 300px;
+            height: 300px;
+            border: 2px solid wheat;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            animation: popupScale 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .banner-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .banner-link {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 10;
+            background: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .close-btn img {
+            width: 18px;
+            height: 18px;
+            display: block;
+            border-radius: 2px;
+            border: 1px solid #333;
+            background-color: aliceblue;
+        }
+
+        .banner-link > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Styling untuk container daftar BO */
+        .link-BO {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .link-BO li {
+            background: linear-gradient(135deg, var(--Button-background), var(--Button-background-active));
+            border: 2px solid var(--Border);
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--Button-text);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-BO li a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+            height: 100%;
+            padding: 8px 10px;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .link-BO li a::after {
+            content: 'Kunjungi ➔';
+            margin-left: auto;
+            font-size: 0.78rem;
+            font-weight: 500;
+            opacity: 0.85;
+            padding: 3px 8px;
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .link-BO li::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--Border);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .link-BO li:hover {
+            transform: translateY(-4px);
+            border-color: var(--Border);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.15);
+            color: var(--Button-text);
+            background: var(--Button-hover);
+        }
+
+        .link-BO li:hover::before {
+            opacity: 1;
+        }
+
+        .link-BO .bo-logo-container {
+            width: 36px;
+            height: 36px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid wheat;
+            background-color: #fff;
+        }
+
+        .link-BO .bo-logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Styling untuk Bagian FAQ / Tanya Jawab */
+        .faq-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--Border);
+        }
+
+        .faq-item {
+            border: 1px solid var(--Border);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 12px;
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+
+        .faq-item summary {
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: "+";
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .faq-item[open] summary::after {
+            content: "−";
+        }
+
+        .faq-item p {
+            margin-top: 10px;
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+
+        .apk-title {
+            margin-bottom: 5px;
+        }
+
+        .apk-list {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .link-APK {
+            text-decoration: none;
+            border: 1px solid var(--Border);
+            color: var(--Button-text);
+            background-color: var(--Button-background);
+            border-radius: 5px;
+            padding: 2px 8px;
+            font-size: 0.80rem;
+            display: inline-block;
+            transition: all 0.2s ease;
+        }
+
+        .link-APK:hover {
+            background-color: var(--Button-hover, var(--Button-background-active));
+            filter: brightness(1.1);
+        }
+    </style>
+
+    <!-- Structured Data: Schema JSON-LD Article untuk SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://portalgamingoasis.netlify.app/"
+      },
+      "headline": "OASISGROUP: Cerita Live Gaming & Peluang Cuan Mudah",
+      "description": "Pengalaman main live gaming dan strategi cuan santai di OasisTogel, Kaisar4DToto, Dynasty4DToto, dan Taruma4D bersama jaringan OASISGROUP.",
+      "image": [
+        "https://portalgamingoasis.netlify.app/img/Banner_sq.jpg"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "OASISGROUP",
+        "url": "https://portalgamingoasis.netlify.app/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "OASISGROUP",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://portalgamingoasis.netlify.app/img/oasis_thumbnail.jpg"
+        }
+      },
+      "datePublished": "2026-11-19T08:00:00+07:00",
+      "dateModified": "2026-11-19T14:00:00+07:00"
+    }
+    </script>
+
+    <!-- Structured Data: Schema JSON-LD FAQPage untuk Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apa saja platform resmi yang tergabung dalam jaringan OASISGROUP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jaringan OASISGROUP mencakup beberapa platform utama yaitu OasisTogel, Kaisar4DToto, Dynasty4DToto, dan Taruma4D yang dapat diakses melalui tautan resmi maupun aplikasi mobile."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apa keuntungan bergabung dan bermain melalui ekosistem OASISGROUP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Member mendapatkan akses ke berbagai program loyalitas seperti benefit harian hingga 1%, bonus mingguan hingga 20%, layanan pelanggan yang responsif, serta sistem permainan yang transparan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah tersedia aplikasi (APK) untuk bermain di perangkat Android?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ya, tersedia file unduhan APK resmi untuk masing-masing platform (OasisTogel, Kaisar4DToto, Dynasty4DToto, dan Taruma4D) di bagian footer halaman agar akses dari ponsel lebih cepat dan ringan."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- POPUP -->
+    <div class="modal" id="modal_popup" role="dialog" aria-modal="true" aria-label="Promo Banner OASISGROUP">
+        <div class="popup">
+            <button type="button" class="close-btn" id="close_popup" aria-label="Tutup popup">
+                <img src="img/x.png" alt="Close" width="18" height="18">
+            </button>
+            <div class="banner-container">
+                <a class="banner-link" href="https://taruma4djaya.netlify.app/" target="_blank" rel="nofollow noopener noreferrer">
+                    <img src="img/Banner_sq.jpg" alt="Banner Promo OASISGROUP" width="300" height="300">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navigasi Utama -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a class="brand-link" href="https://oasistogel.netlify.app">
+                    <img src="img/oasis_thumbnail.jpg" class="logo" alt="Logo OASISGROUP" width="48" height="48">
+                </a>
+                <a class="brand-link" href="https://oasistogel.netlify.app"><h2>OASISGROUP</h2></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        <ul class="link-BO" id="list_bo"></ul>
+        <article>
+            <!-- Judul Artikel: Hanya boleh ada SATU tag <h1> di setiap halaman -->
+            <h1>OASISGROUP: Cerita Live Gaming &amp; Peluang Cuan Mudah</h1>
+
+            <p class="meta-info">Dipublikasikan pada <time datetime="2026-11-19">19 November 2026</time> oleh Penulis</p>
+
+            <!-- Gambar Utama dengan atribut Alt yang deskriptif -->
+            <div class="hero-banner">
+                <img src="img/Banner_sq.jpg" alt="Ilustrasi sesi live gaming dan peluang cuan bersama OASISGROUP" width="300" height="300">
+            </div>
+
+            <p>Banyak sesi <strong>live gaming</strong> berawal dari rasa iseng mengisi waktu luang sebelum akhirnya menghadirkan momen seru dan peluang cuan tak terduga. Di jaringan <strong>OASISGROUP</strong>—yang menaungi <strong>OasisTogel</strong>, <strong>Kaisar4DToto</strong>, <strong>Dynasty4DToto</strong>, dan <strong>Taruma4D</strong>—pemain sering membagikan pengalaman bagaimana bermain dengan tempo santai membantu menjaga fokus saat sesi berlangsung.</p>
+
+            <h2>Keunggulan Ekosistem OASISGROUP untuk Bermain Rutin</h2>
+            <p>Kenyamanan bermain sangat dipengaruhi oleh kestabilan sistem, kecepatan akses di perangkat mobile maupun desktop, serta program loyalitas yang jelas. Melalui <strong>OASISGROUP</strong>, pengguna dapat memanfaatkan beberapa manfaat utama berikut:</p>
+            <ul>
+                <li><strong>Benefit Harian hingga 1%:</strong> Kesempatan meraih tambahan nilai harian sesuai syarat program aktif yang berjalan.</li>
+                <li><strong>Bonus Mingguan hingga 20%:</strong> Peluang akumulasi keuntungan mingguan bagi member yang aktif mengikuti promo.</li>
+                <li><strong>Akses Cepat &amp; APK Ringan:</strong> Tautan resmi dan file APK tersedia untuk memudahkan akses langsung dari ponsel.</li>
+            </ul>
+
+            <h3>Stabilitas Sesi &amp; Layanan Responsif saat Live Gaming</h3>
+            <p>Dalam permainan live interaktif, jeda respons dan kejelasan aturan main sangat menentukan kenyamanan. Dukungan layanan pelanggan yang sigap serta alur permainan yang transparan membantu pemain membaca dinamika sesi tanpa gangguan teknis yang menghambat.</p>
+
+            <h2>Cara Memanfaatkan Data Statistik &amp; Manajemen Ritme Main</h2>
+            <p>Mengandalkan firasat semata sering membuat keputusan kurang konsisten. Dengan memantau statistik permainan yang diperbarui secara berkala, pemain dapat mengenali pola putaran, mengatur batas modal sejak awal, dan menentukan waktu jeda secara lebih terukur.</p>
+
+            <h3>Menjaga Target Realistis dan Kontrol Emosi</h3>
+            <p>Baik saat bermain santai sendirian maupun mengikuti keseruan live bersama komunitas di OasisTogel, Kaisar4DToto, Dynasty4DToto, dan Taruma4D, disiplin pada batas waktu dan target realistis menjaga pengalaman bermain tetap terkendali.</p>
+
+            <!-- Bagian Tanya Jawab (FAQ) yang sinkron dengan Schema JSON-LD FAQPage -->
+            <section class="faq-section" aria-labelledby="faq-heading">
+                <h2 id="faq-heading">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+
+                <details class="faq-item" open>
+                    <summary>Apa saja platform resmi yang tergabung dalam jaringan OASISGROUP?</summary>
+                    <p>Jaringan OASISGROUP mencakup beberapa platform utama yaitu OasisTogel, Kaisar4DToto, Dynasty4DToto, dan Taruma4D yang dapat diakses melalui tautan resmi maupun aplikasi mobile.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Apa keuntungan bergabung dan bermain melalui ekosistem OASISGROUP?</summary>
+                    <p>Member mendapatkan akses ke berbagai program loyalitas seperti benefit harian hingga 1%, bonus mingguan hingga 20%, layanan pelanggan yang responsif, serta sistem permainan yang transparan.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Apakah tersedia aplikasi (APK) untuk bermain di perangkat Android?</summary>
+                    <p>Ya, tersedia file unduhan APK resmi untuk masing-masing platform (OasisTogel, Kaisar4DToto, Dynasty4DToto, dan Taruma4D) di bagian footer halaman agar akses dari ponsel lebih cepat dan ringan.</p>
+                </details>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer / Bagian Bawah Website -->
+    <footer>
+        <div>
+            <p class="apk-title">Download APK</p>
+            <div class="apk-list" id="apk_list"></div>
+        </div>
+        <p>&copy; 2026 OASIS GROUP. Hak cipta dilindungi.</p>
+    </footer>
+
+    <script>
+        // Kontrol popup: tombol close hanya menutup modal, klik banner membuka tautan tujuan
+        const modalPopup = document.getElementById("modal_popup");
+        const closeBtn = document.getElementById("close_popup");
+
+        if (closeBtn && modalPopup) {
+            closeBtn.addEventListener("click", (event) => {
+                event.stopPropagation();
+                modalPopup.classList.add("is-hidden");
+            });
+        }
+
+        // Render daftar link BO dan link APK
+        const web = [
+            {
+                namaBO: "OasisTogel",
+                linkBO: "https://oasistogelxc.com/new/register?reff=RefOASIS",
+                apkBO: "https://manekinekos.s3.ap-southeast-1.amazonaws.com/apk/dist/OASIS.apk",
+                imgBO: "./img/oasis.png"
+            },
+            {
+                namaBO: "Kaisar4DToto",
+                linkBO: "https://kaisar4dtotoxb.com/new/register?reff=RefOASIS",
+                apkBO: "https://manekinekos.s3.ap-southeast-1.amazonaws.com/apk/dist/KAISAR.apk",
+                imgBO: "./img/kaisar.png"
+            },
+            {
+                namaBO: "Dynasty4DToto",
+                linkBO: "https://dynasty4dtotoslot.com/new/register?reff=RefOASIS",
+                apkBO: "https://manekinekos.s3.ap-southeast-1.amazonaws.com/apk/dist/DYNASTY.apk",
+                imgBO: "./img/dynasty.png"
+            },
+            {
+                namaBO: "Taruma4D",
+                linkBO: "https://taruma4dxf.com/register?referral=refoasis",
+                apkBO: "https://manekinekos.s3.ap-southeast-1.amazonaws.com/apk/dist/TARUMA.apk",
+                imgBO: "./img/taruma4d.png"
+            }
+        ];
+
+        const ulContainer = document.getElementById("list_bo");
+        const apkContainer = document.getElementById("apk_list");
+
+        web.forEach(item => {
+            const img = document.createElement("img");
+            img.src = item.imgBO;
+            img.alt = item.namaBO;
+            img.width = 36;
+            img.height = 36;
+
+            const imgContainer = document.createElement("div");
+            imgContainer.className = "bo-logo-container";
+            imgContainer.appendChild(img);
+
+            const anchorBO = document.createElement("a");
+            anchorBO.href = item.linkBO;
+            anchorBO.target = "_blank";
+            anchorBO.rel = "nofollow noopener noreferrer";
+            anchorBO.appendChild(imgContainer);
+            anchorBO.appendChild(document.createTextNode(item.namaBO));
+
+            const li = document.createElement("li");
+            li.appendChild(anchorBO);
+            ulContainer.appendChild(li);
+
+            const linkAPK = document.createElement("a");
+            linkAPK.href = item.apkBO;
+            linkAPK.target = "_blank";
+            linkAPK.rel = "nofollow noopener noreferrer";
+            linkAPK.textContent = item.namaBO;
+            linkAPK.className = "link-APK";
+
+            apkContainer.appendChild(linkAPK);
+        });
+    </script>
+</body>
+</html>
