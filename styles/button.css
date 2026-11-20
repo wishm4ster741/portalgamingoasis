@@ -1,0 +1,36 @@
+
+button {
+    background: var(--Button-background);
+    color: var(--Button-text);
+    border: 1px solid var(--Border);
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    background: var(--Button-hover);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Focus */
+button:focus-visible {
+    outline: 2px solid var(--Heading);
+    outline-offset: 3px;
+}
+
+button:active {
+    background: var(--)Button-background-active);
+    transform: scale(0.97);
+}

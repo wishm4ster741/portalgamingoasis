@@ -1,0 +1,157 @@
+
+/* =========================
+   NAVBAR BASE
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 65px;
+    box-sizing: border-box;
+
+    background: var(--Navbar);
+    border-bottom: 1px solid var(--Border);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 24px;
+
+    position: sticky;
+    top: 0;
+    z-index: 90;
+}
+
+/* =========================
+   NAVBAR LEFT
+========================= */
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.navbar-title {
+    color: var(--Heading);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* =========================
+   NAVBAR RIGHT
+========================= */
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* =========================
+   NAVBAR ICON BUTTON
+========================= */
+
+.navbar-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    color: var(--Icon);
+
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.navbar-icon:hover {
+    background: var(--Card);
+    color: var(--Heading);
+    border-color: var(--Border);
+}
+
+/* =========================
+   NAVBAR SEARCH
+========================= */
+
+.navbar-search {
+    width: 240px;
+    position: relative;
+}
+
+.navbar-search input {
+    width: 100%;
+    height: 38px;
+
+    padding: 0 12px 0 38px;
+
+    background: var(--Input-background);
+    color: var(--Body-text);
+
+    border: 1px solid var(--Input-border);
+    border-radius: 8px;
+}
+
+.navbar-search input:focus {
+    border-color: var(--Heading);
+    box-shadow: 0 0 0 3px rgba(204, 208, 223, 0.12);
+}
+
+/* =========================
+   NAVBAR PROFILE
+========================= */
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 5px 10px;
+
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: background 0.25s ease;
+}
+
+.navbar-profile:hover {
+    background: var(--Card);
+}
+
+.navbar-profile img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navbar-profile span {
+    color: var(--Heading);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* =========================
+   NAVBAR RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 14px;
+    }
+
+    .navbar-search {
+        display: none;
+    }
+
+    .navbar-profile span {
+        display: none;
+    }
+}

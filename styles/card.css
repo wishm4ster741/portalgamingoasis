@@ -1,0 +1,62 @@
+
+/* =========================
+   CARD BASE
+========================= */
+
+.card {
+    background: var(--Card);
+    color: var(--Body-text);
+    border: 1px solid var(--Border);
+    border-radius: 12px;
+    padding: 20px;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.card:hover {
+    background: var(--Card-hover);
+    border-color: var(--Secondary-text);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   CARD TITLE
+========================= */
+
+.card-title {
+    color: var(--Heading);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   CARD DESCRIPTION
+========================= */
+
+.card-description {
+    color: var(--Secondary-text);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* =========================
+   CARD FOOTER
+========================= */
+
+.card-footer {
+    border-top: 1px solid var(--Border);
+    margin-top: 16px;
+    padding-top: 12px;
+    color: var(--Secondary-text);
+    font-size: 13px;
+}

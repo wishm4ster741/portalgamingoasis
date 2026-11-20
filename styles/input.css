@@ -1,0 +1,130 @@
+
+/* =========================
+   INPUT BASE
+========================= */
+
+input,
+textarea,
+select {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: var(--Input-background);
+    color: var(--Body-text);
+
+    border: 1px solid var(--Input-border);
+    border-radius: 8px;
+
+    padding: 11px 14px;
+
+    font-size: 14px;
+    font-family: inherit;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--Placeholder);
+    opacity: 0.8;
+}
+
+/* =========================
+   HOVER
+========================= */
+
+input:hover,
+textarea:hover,
+select:hover {
+    border-color: var(--Secondary-text);
+}
+
+/* =========================
+   FOCUS
+========================= */
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--Heading);
+    box-shadow: 0 0 0 3px rgba(204, 208, 223, 0.12);
+}
+
+/* =========================
+   TEXTAREA
+========================= */
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+/* =========================
+   SELECT
+========================= */
+
+select {
+    cursor: pointer;
+}
+
+/* =========================
+   DISABLED
+========================= */
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* =========================
+   ERROR STATE
+========================= */
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+    border-color: #C07878;
+}
+
+/* =========================
+   AUTOFILL
+========================= */
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: var(--Body-text);
+    -webkit-box-shadow: 0 0 0 1000px var(--Input-background) inset;
+}
+
+
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+/* =========================
+   LABEL
+========================= */
+
+.form-group label {
+    color: var(--Heading);
+    font-size: 14px;
+    font-weight: 500;
+}

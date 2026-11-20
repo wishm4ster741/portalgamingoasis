@@ -1,0 +1,79 @@
+
+:root {
+    /* Background */
+    --Main-background: #06141B;
+    --Navbar: #11212D;
+    --Sidebar: #11212D;
+
+    /* Cards & Containers */
+    --Card: #253745;
+    --Card-hover: #4A5C6A;
+
+    /* Borders & Frames */
+    --Border: #4A5C6A;
+
+    /* Typography */
+    --Heading: #CCD0DF;
+    --Body-text: #CCD0DF;
+    --Secondary-text: #9BA8AB;
+    --Placeholder: #9BA8AB;
+
+    /* Icons */
+    --Icon: #9BA8AB;
+
+    /* Buttons */
+    --Button-background: #4A5C6A;
+    --Button-background-active: #11212D;
+    --Button-text: #CCD0DF;
+    --Button-hover: #253745;
+
+    /* Inputs */
+    --Input-background: #11212D;
+    --Input-border: #4A5C6A;
+}
+
+body {
+    background: var(--Main-background);
+    color: var(--Body-text);
+}
+
+.navbar {
+    background: var(--Navbar);
+}
+
+.sidebar {
+    background: var(--Sidebar);
+}
+
+.xcard {
+    background: var(--Card);
+    border: 1px solid var(--Border);
+}
+
+.xcard:hover {
+    background: var(--Card-hover);
+}
+
+h1, h2, h3 {
+    color: var(--Heading);
+}
+
+p {
+    color: var(--Body-text);
+}
+
+xbutton {
+    background: var(--Button-background);
+    color: var(--Button-text);
+    border: none;
+}
+
+xinput {
+    background: var(--Input-background);
+    border: 1px solid var(--Input-border);
+    color: var(--Body-text);
+}
+
+xinput::placeholder {
+    color: var(--Placeholder);
+}

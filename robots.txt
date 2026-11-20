@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Lokasi Peta Situs (Sitemap)
+Sitemap: https://oasisgroup.netlify.app/sitemap.xml
